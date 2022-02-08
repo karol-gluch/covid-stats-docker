@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class DateHelper {
 
-    public static final String DEFAULT_DATE_FORMAT = "dd/MM/yyyy";
+    public static final String DEFAULT_DATE_FORMAT = "dd-MM-yyyy";
 
     public static String getDateWithPattern(LocalDateTime date) {
         String dateFormat = "";
