@@ -7,6 +7,18 @@ body {
     text-align: center;
 }
 
+h2 {
+    margin-top: 15%;
+    font-weight: 100;
+}
+
+p {
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
 .square {
     width:17%;
     height: 200px;
@@ -35,6 +47,23 @@ body {
 }
 
 .square h2 {
+    margin-top: 0;
     font-size: 16px;
     font-weight: 100;
+}
+
+@media screen and (max-width: 920px) {
+    .square {
+        display:block;
+        margin-left: 35%;
+        width: 30%;
+    }
+
+    .square h1 {
+        font-size: 24px;
+    }
+
+    .square h2 {
+        font-size: 24px;
+    }
 }

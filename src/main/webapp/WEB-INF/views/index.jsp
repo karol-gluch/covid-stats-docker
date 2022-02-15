@@ -17,6 +17,8 @@
     <link href="${contextPath}/resources/css/all.css" rel="stylesheet">
 </head>
 <body>
+    <h2>Covid Statistics</h2>
+    <center><p></p></center>
     <div class="square">
         <i class="fa fa-calendar-alt"></i>
         <h1>${covidStats.date}r.</h1>
