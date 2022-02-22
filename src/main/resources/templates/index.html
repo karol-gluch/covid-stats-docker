@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 STATISTICS</title>
+
+    <link href="../static/css/style.css" th:href=@{/css/style.css} rel="stylesheet">
+    <link href="../static/css/all.css" th:href=@{/css/all.css} rel="stylesheet">
+</head>
+<body>
+    <h2>Covid Statistics</h2>
+    <center><p></p></center>
+    <div class="square">
+        <i class="fa fa-calendar-alt"></i>
+        <h1 th:text="${covidStats.date}">r.</h1>
+        <h2>DATE OF STATISTICS</h2>
+    </div>
+    <div class="square">
+        <i class="fa fa-head-side-mask"></i>
+        <h1 th:text="${covidStats.confirmedToday}"></h1>
+        <h2>TODAY CONFIRMED</h2>
+    </div>
+    <div class="square">
+        <i class="fa fa-viruses"></i>
+        <h1 th:text="${covidStats.totalConfirmed}"></h1>
+        <h2>TOTAL CONFIRMED</h2>
+    </div>
+    <div class="square">
+        <i class="fa fa-user-slash"></i>
+        <h1 th:text="${covidStats.deathsToday}"></h1>
+        <h2>TODAY DEATHS</h2>
+    </div>
+    <div class="square">
+        <i class="fa fa-users-slash"></i>
+        <h1 th:text="${covidStats.totalDeaths}"></h1>
+        <h2>TOTAL DEATHS</h2>
+    </div>
+</body>
+</html>
